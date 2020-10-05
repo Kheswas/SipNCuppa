@@ -1,70 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
+  <title>using Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootsrap.min.css">
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css";>
 <style>
-body{
-  color: white;
-  }
-  h1{
-    color: white;
-  }
-
-
-ul {
-  list-style-type: none;
+body, html{
+  height: 130%;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #60;
 }
+.bg{
+  /* The image used*/
+  background-image: url("MenuBackground.jpg");
 
-li {
-  float: left;
-}
+  /*full height*/
+  height: 50%;
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #180;
-}
-.active {
-  background-color: #4CDED9;
-}
-
-
-html{
-  background: url(background.jpg) no-repeat center fixed;
-  background-size:cover;
-}
-img {
-  border-radius: 8px;
-}
-
-/* This style sets the width of all images to 100%: */
-img{
-  width: 100%;
+  /* Center and scale the image nicely */
+  background-postion: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 </style>
 </head>
-<body>
+
+<body style="background-color:grey;">
 
   <nav>
-  <ul>
-    <li><a class="active" href="Home.html">Home</a></li>
-    <li><a href="Menu.html">Menu</a></li>
-    <li><a href="AboutUs.html">AboutUs</a></li>
-    <li><a href="OurTeam.html">OurTeam</a></li>
-    <li><a href="ContactUs.html">ContactUs</a></li>
-  </ul>
-  </nav>
+<div class="topnav">
+<a class="active" href="#Home.html">Home</a>
+<a href="Menu.html">Menu</a>
+<a href="AboutUs.html">AboutUs</a>
+<a href="OurTeam.html">OurTeam</a>
+<a href="contactUs.html">ContactUs</a>
+
+<div class="search-container">
+  <form action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</div>
+</div>
+</nav>
+<div class="bg"></div>
+
+
 <center>
 <h1>Welcome to Sip N Cuppa</h1>
   <p> Want to have a good time and drink some coffee?
@@ -74,7 +62,7 @@ img{
   </center>
 
 
-  
+
 
 
 

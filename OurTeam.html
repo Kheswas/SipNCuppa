@@ -1,64 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-
-body{
-  color: white;
-  }
-  h1{
-    color: white;
-  }
-
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #60;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;       vg
-}
-
-a:hover{
-  background-color: #111;
-}
-
-
-html{
-  background: url(Ourteam.jpg) no-repeat center fixed;
-  background-size:cover;
-}
-img {
-  border-radius: 10px;
-}
-</style>
+  <title>using Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css";>
 </head>
 
+<body style="background-color:grey;">
+<style>
+body, html{
+  height: 130%;
+  margin: 0;
+}
+.bg{
+  /* The image used*/
+  background-image: url("ourteam.jpg");
 
+  /*full height*/
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-postion: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 
 <body>
 
   <nav>
-  <ul>
-    <li><a class="active" href="Home.html">Home</a></li>
-    <li><a href="Menu.html">Menu</a></li>
-    <li><a href="AboutUs.html">AboutUs</a></li>
-    <li><a href="OurTeam.html">OurTeam</a></li>
-    <li><a href="ContactUs.html">ContactUs</a></li>
-  </ul>
-  </nav>
+<div class="topnav">
+<a class="active" href="#Home.html">Home</a>
+<a href="Menu.html">Menu</a>
+<a href="AboutUs.html">AboutUs</a>
+<a href="OurTeam.html">OurTeam</a>
+<a href="contactUs.html">ContactUs</a>
+
+<div class="search-container">
+  <form action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</div>
+</div>
+</nav>
+<div class="bg"></div>
+
+
 <center>
 <h1>Welcome to Sip N Cuppa</h1>
   <p> Want to have a good time and drink some coffee?
@@ -66,8 +57,75 @@ img {
     Our Cafe was created by the owners of Mobirise eCommerce WebsiteBuilder to bring
     endeavor ready clients,locals and travelers, a truly unique coffee experience.</p>
   </center>
+<div class="jumbotron" id="OurTeam"></div>
+<div class="container">
+  <h2>Meet Our Team</h2>
+  <p>Click on the images to enlarge them.</p>
+<div class="row">
+  <div class="col-md-4">
+    <a href=“https://www.w3schools.com”>
+    <img src="Amanda_adams.jpg" alt="Fjords"
+    style=width:60%>Visit W3Schools.com!
+    </a>
+</div>
+<div class="col-md-4">
+  <img src="john_Smith.jpg" alt="Fjords"
+  style=width:60%>
+  <a href=“https://www.w3schools.com”>Visit W3Schools.com!</a>
+</div>
+<div class="col-md-4">
+  <img src="Ashley_Cage.jpg" alt="Fjords"
+  style=width:60%>
+  <a href=“https://www.w3schools.com”>Visit W3Schools.com!</a>
+</div>
+</div>
+</div>
 
 
+<!--
+  <div class="row">
+    <div class="col-md-3">
+      <div class="Thumnail">
+        <a href="Amanda_adams.jpg" target="_blank">
+          <img src="Amanda_adams.jpg" alt="Fjords"
+          style=width:15%>
+        </div>
+          <div class="caption">
+            <p>djkhJHGouhoiewhiuicsajhcgyiuwglihjkLIUG</p>
+          </div>
+
+        </a>
+      </div>
+
+    <div class="col-md_3">
+      <div class="Thumbnail">
+        <a href="john_Smith.jpg" target="_blank">
+          <img src="john_Smith.jpg" alt="Fjords"
+          style=width:15%>
+          <div class="caption">
+            <p>kjsgjahvhijsghuOSHIDVHGLUIJJKFhliuhiuvhsjkdhiuhgliuhihfluygickgyf</P>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="Thumbnail">
+          <a href="Ashley_Cage.jpg" target="_blank">
+            <img src="Ashley_Cage.jpg" alt="Fjords"
+            style=width:15%>
+            <div class="caption">
+              <p> sgha;oieh'foigh;oiuyilvuhkjsfjkhuwyteryaisjhcfkuytw67tlhaiuwgli</p>
+            </div>
+          </a>
+        </div>
+  </div>
+-->
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 
 </body>
