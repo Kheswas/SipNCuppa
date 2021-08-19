@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>using Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,
+  initial-scale=1">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootsrap.min.css">
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/style.css";>
+<style>
+img {
+  border-radius: 50%;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+}
+/* Create two equal columns that sits next to each other */
+
+.columns {
+  flex: 50%;
+  paddin: 10px;
+  height: 300px; /* should be removed only for demonstartion */
+}
+div.gallery{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 500px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  }
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+body, html{
+  height: 130%;
+  margin: 0;
+}
+.bg{
+  /* The image used*/
+  background-image: url("MenuBackground.jpg");
+
+  /*full height*/
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-postion: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>
+</head>
+
+<body style="background-color:grey;">
+
+  <nav>
+<div class="topnav">
+<a class="active" href="Home.html">Home</a>
+<a href="Menu.html">Menu</a>
+<a href="AboutUs.html">AboutUs</a>
+<a href="OurTeam.html">OurTeam</a>
+<a href="contactUs.html">ContactUs</a>
+
+<div class="search-container">
+  <form action="/action_page.php">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  </form>
+</div>
+</div>
+</nav>
+<div class="bg"></div>
+
+<script>
+window.oncroll = function()
+{myFunction()};
+
+var topnav =
+document.getElementById("topnav");
+var sticky =
+topnav.offsetTop;
+
+function myFuction() {
+  if (window.payeOffset >=
+  sticky){
+
+    topnav.classList.add("sticky")
+  } else{
+    topnav.classList.remove("sticky");
+  }
+}
+
+
+
+</script>
+
+
+
+<center>
+<h1>Our Menu</h1>
+  <p> Want to have a good time and drink some coffee?
+    Come to our Cafe!
+    Our Cafe was created by the owners of Mobirise eCommerce WebsiteBuilder to bring
+    endeavor ready clients,locals and travelers, a truly unique coffee experience.</p>
+
+
+  <div class= "row">
+    <div class="columns" style="background-color:grey;">
+    <a target="_blank" href="cake.jpg">
+      <img src="cake.jpg" alt='Cake'
+      width="400" height="200">
+      <div class='desc'> Here is a Yummy slice of chocolate Cake</div>
+    </div>
+    <br>
+
+    <div class="columns" style="background-color:grey;">
+      <a target="_blank" href="cuppacino.jpg">
+        <img src= "cuppacino.jpg" alt='cup of coffee'
+        width='400' height='200'>
+      </a>
+      <div class='desc'>Heres a yummy cup of coffee </div>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="columns" style="background-color:grey;">
+  <a target="_blank" href="croissant.jpg">
+        <img src="croissant.jpg" alt='croissant'
+        width="400" height="200">
+        <div class='desc'> Here is a Yummy slice of chocolate Cake</div>
+      </div>
+      <br>
+     <div class="columns" style="background-color:grey;">
+        <a target="_blank" href="icedcoffee.jpg">
+          <img src= "icedcoffee.jpg" alt='cup of icedcoffee'
+          width='400' height='200'>
+        </a>
+        <div class='desc'>Heres a yummy cup of coffee </div>
+      </div>
+  </div>
+  <br>
+</center>
+
+
+
+
+
+
+
+</body>
+</html>
